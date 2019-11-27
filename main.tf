@@ -15,8 +15,6 @@ resource "aws_api_gateway_usage_plan" "MyUsagePlan_2" {
   name         = "${var.name}"
   description  = "${var.description}"
   product_code = "${var.product_code}"
-  has_quota_settings = "${var.has_quota_settings}"
-  has_throttle_settings = "${var.has_throttle_settings}"
 
   api_stages {
     api_id = "${var.api_id}"
